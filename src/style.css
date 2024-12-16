@@ -20,12 +20,14 @@ h1, h2, h3, button {
     text-transform: uppercase;
     line-height: 1.4em;
     text-align: center;
+    font-family: OpenSans;
 }
 
 /* Containers styles */
 
 body {
     padding: 0 20px;
+    font-family: OpenSans;
 }
 
 div.container {
@@ -62,14 +64,12 @@ div.item {
     justify-content: space-between;
     flex-wrap: nowrap;
     margin: 0.5em 0 0.5em 0;
+    gap: 0.5em;
 }
 
 input, input.expanded {
     width:100%;
-}
-
-label {
-    width: 100px;
+    font-family: OpenSans;
 }
 
 /* Buttons styles */
