@@ -1,0 +1,161 @@
+/* Styles normilize */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0; 
+    outline: 0;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+/* HTML tags styles */
+
+h1, h2, h3, button {
+    text-transform: uppercase;
+    line-height: 1.4em;
+    text-align: center;
+}
+
+/* Containers styles */
+
+body {
+    padding: 0 20px;
+}
+
+div.container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 3em;
+    margin: 5em 0 5em 0;
+}
+
+div.child_1, div.child_2 {
+    padding: 3em;
+    height: auto;
+    border-radius: 1em;
+    border: 3px;
+    border-style: solid;
+    border-color: coral;
+    width: 350px;
+}
+
+div.container > div.child_2 {
+    background-color: coral;
+}
+
+/* Form containers styles */
+
+div.item {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin: 0.5em 0 0.5em 0;
+}
+
+input, input.expanded {
+    width:100%;
+}
+
+label {
+    width: 100px;
+}
+
+/* Buttons styles */
+
+label, button.form {
+    font-size: 1.2em;
+    line-height: 1.4em;
+}
+
+input {
+    font-size: 1em;
+    line-height: 1.5em;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 2px;
+    border-style: solid;
+    border-color: #f1f1f1;
+}
+
+input[type="text"]:active, input[type=text]:focus {
+    border-color: lightgray;
+}
+
+button.form {
+    margin-top: 1em;
+    padding: 0.5em 2em;
+    border: 2px;
+    border-radius: 5px;
+    border-style: solid;
+    width: 100%;
+}
+
+form.registration__form > button.form, form.tasks__form > button.form {
+    color: coral;
+    border-color: coral;
+    background-color: #ffffff00;
+}
+
+form.registration__form > button.form:hover, form.tasks__form > button.form:hover {
+    color: #ffffff;
+    border-color: coral;
+    background-color: coral;
+}
+
+form.authorisation__form > button.form {
+    color: coral;
+    border-color: #fff1eb;
+    background-color: #fff1eb;
+}
+
+form.authorisation__form > button.form:hover {
+    color: coral;
+    border-color: #ffffff;
+    background-color: #ffffff;
+}
+
+button.add {
+    font-size: 3em;
+    border: none;
+    background-color: #ffffff00;
+    color: grey;
+}
+
+button.add:hover {
+    color: #000000;
+} 
+
+/* Tasks container styles */
+
+div.tasks_list {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* Responsive design */
+@media (max-width: 800px) {
+    div.container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 800px) {
+    div.tasks_list {
+        padding: 0px;
+    }
+}

@@ -8,27 +8,64 @@
 </head>
 <body>
     <div class="container">
-        <section class="registration">
-            <h2>Регистрация</h2>
-            <form action="" method="post" class="registration__form">
-                <label for="registration__form__username">Логин:</label>
-                <input type="text" id="registration__form__username" name="username" placeholder="Введите логин" required>
-                <label for="registration__form__password">Пароль:</label>
-                <input type="text" id="registration__form__password" name="password" placeholder="Введите пароль" required>
-                <button type="submit">Регистрация</button>
-            </form>
-        </section>
+        <div class="child_1">
+            <section class="registration">
+                <h2>Регистрация</h2>
+                <form action="" method="post" class="registration__form">
+                    <div class="item">
+                        <label for="registration__form_username">Логин:</label>
+                    </div>
+                    <div class="item">
+                        <input type="text" id="registration__form_username" name="username" placeholder="Введите логин" required>
+                    </div>
+                    <div class="item">
+                        <label for="registration__form_password">Пароль:</label>
+                    </div>
+                    <div class="item">
+                        <input type="text" id="registration__form_password" name="password" placeholder="Введите пароль" required>
+                    </div>
+                    <button type="submit" class="form">Регистрация</button>
+                </form>
+            </section>
+        </div>
+        <div class="child_2">
+            <section class="authorisation">
+                <h2>Авторизация</h2>
+                <form action="" method="post" class="authorisation__form">
+                    <div class="item">
+                        <label for="authorisation__form_username">Логин:</label>
+                    </div>
+                    <div class="item">
+                        <input type="text" id="authorisation__form_username" name="username" placeholder="Введите логин" required>
+                    </div>
+                    <div class="item">
+                        <label for="authorisation__form_password">Пароль:</label>
+                    </div>
+                    <div class="item">
+                        <input type="text" id="authorisation__form_password" name="password" placeholder="Введите пароль" required>
+                    </div>
+                    <button type="submit" class="form">Вход</button>
+                </form>
+            </section>
+        </div>
     </div>
-    <div class="container">
-        <section class="authorisation">
-            <h2>Авторизация</h2>
-            <form action="" method="post" class="authorisation__form">
-                <label for="authorisation__form__username">Логин:</label>
-                <input type="text" id="authorisation__form__username" name="username" placeholder="Введите логин" required>
-                <label for="authorisation__form__password">Пароль:</label>
-                <input type="text" id="authorisation__form__password" name="password" placeholder="Введите пароль" required>
-                <button type="submit">Вход</button>
+    <div class="tasks_list">
+        <section class="tasks">
+            <h2>Ваши задачи</h2>
+            <form action="" method="post" class="tasks__form">
+                <div class="item">
+                    <label for="tasks__form_add">Новая:</label>
+                </div>
+                <div class="item">
+                    <input type="text" class="expanded" id="tasks__form_add" name="add_task" placeholder="Описание задачи" required>
+                    <button type="submit" class="add">&oplus;</button>
+                </div>
             </form>
+            <div class="item">
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
         </section>
     </div>
 </body>
