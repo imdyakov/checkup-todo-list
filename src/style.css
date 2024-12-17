@@ -1,0 +1,134 @@
+/* Styles normilize */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+/* HTML tags styles */
+
+h1, h2, h3, button {
+    text-transform: uppercase;
+    line-height: 1.4em;
+    text-align: center;
+}
+
+/* Containers styles */
+
+body {
+    padding: 0 20px;
+    font-family: OpenSans;
+}
+
+div.container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 3em;
+    margin: 5em 0 5em 0;
+}
+
+section.registration, section.authorisation {
+    padding: 3em;
+    height: auto;
+    width: 350px;
+    border-radius: 1em;
+    border: 3px;
+    border-style: solid;
+    border-color: coral;
+}
+
+section.authorisation {
+    background-color: coral;
+}
+
+/* Form containers styles */
+
+input {
+    width:100%;
+}
+
+/* Buttons styles */
+
+label, button {
+    font-size: 1.2em;
+    line-height: 1.4em;
+}
+
+input {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 2px;
+    border-style: solid;
+    border-color: #f1f1f1;
+}
+
+input[type="text"]:active, input[type=text]:focus {
+    border-color: lightgray;
+}
+
+button.form {
+    margin-top: 1em;
+    padding: 0.5em 2em;
+    border: 2px;
+    border-radius: 5px;
+    border-style: solid;
+    width: 100%;
+}
+
+form.registration__form > button.form {
+    color: coral;
+    border-color: coral;
+    background-color: #ffffff00;
+}
+
+form.registration__form > button.form:hover {
+    color: #ffffff;
+    border-color: coral;
+    background-color: coral;
+}
+
+form.authorisation__form > button.form {
+    color: coral;
+    border-color: #fff1eb;
+    background-color: #fff1eb;
+}
+
+form.authorisation__form > button.form:hover {
+    color: coral;
+    border-color: #ffffff;
+    background-color: #ffffff;
+}
+
+button.add {
+    font-size: 3em;
+    border: none;
+    background-color: #ffffff00;
+    color: grey;
+}
+
+button.add:hover {
+    color: #000000;
+}
+
+
+/* Responsive design */
+@media (max-width: 800px) {
+    div.container {
+        flex-direction: column;
+    }
+}

@@ -5,31 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Регистрация и атворизация</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <section class="registration">
             <h2>Регистрация</h2>
             <form action="" method="post" class="registration__form">
-                <label for="registration__form__username">Логин:</label>
-                <input type="text" id="registration__form__username" name="username" placeholder="Введите логин" required>
-                <label for="registration__form__password">Пароль:</label>
-                <input type="text" id="registration__form__password" name="password" placeholder="Введите пароль" required>
-                <button type="submit">Регистрация</button>
+                <label for="registration__form_username">Логин:</label>
+                <input type="text" id="registration__form_username" name="username" placeholder="Введите логин" required>
+                <label for="registration__form_password">Пароль:</label>
+                <input type="text" id="registration__form_password" name="password" placeholder="Введите пароль" required>
+                <button type="submit" class="form">Регистрация</button>
             </form>
         </section>
-    </div>
-    <div class="container">
         <section class="authorisation">
             <h2>Авторизация</h2>
             <form action="" method="post" class="authorisation__form">
-                <label for="authorisation__form__username">Логин:</label>
-                <input type="text" id="authorisation__form__username" name="username" placeholder="Введите логин" required>
-                <label for="authorisation__form__password">Пароль:</label>
-                <input type="text" id="authorisation__form__password" name="password" placeholder="Введите пароль" required>
-                <button type="submit">Вход</button>
+                <label for="authorisation__form_username">Логин:</label>
+                <input type="text" id="authorisation__form_username" name="username" placeholder="Введите логин" required>
+                <label for="authorisation__form_password">Пароль:</label>
+                <input type="text" id="authorisation__form_password" name="password" placeholder="Введите пароль" required>
+                <button type="submit" class="form">Вход</button>
             </form>
         </section>
     </div>
+    <section class="tasks">
+        <h2>Ваши задачи</h2>
+        <form action="" method="post" class="tasks__form">
+            <label for="tasks__form_add">Добавить новую:</label>
+            <input type="text" class="expanded" id="tasks__form_add" name="add_task" placeholder="Описание задачи" required>
+            <button type="submit" class="add">&oplus;</button>
+        </form>
+            <ul>
+                <li></li>
+            </ul>
+    </section>
 </body>
 </html>
